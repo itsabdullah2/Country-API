@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(90deg, #020024, #090979, #00d4ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #fff;
+  width: 80vw;
+  max-width: 37.5em;
+  padding: 3em 2.5em;
+  border-radius: 0.62em;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.search-wrapper input {
+  flex: 1;
+  font-size: 1em;
+  padding: 0 0.62em;
+  border: none;
+  border-bottom: 2px solid dodgerblue;
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  .search-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .search-wrapper input {
+    font-size: 15px;
+  }
+}
+
+.search-wrapper input:focus::placeholder {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.search-wrapper button {
+  font-size: 1em;
+  color: #fff;
+  background-color: dodgerblue;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-wrapper button:hover {
+  background-color: rgb(23, 129, 234);
+}
+
+.flag-img {
+  display: block;
+  width: 200px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px #eee;
+}
+
+.container .wrapper {
+  margin-bottom: 15px;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container h4 span {
+  font-weight: 400;
+}
+
+.container h3 {
+  text-align: center;
+  margin-top: 20px;
+  color: #ff465a;
+  font-size: 1.2em;
+  font-weight: 400;
+}
